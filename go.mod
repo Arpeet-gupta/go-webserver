@@ -1,3 +1,3 @@
-module github.com/Arpeet-gupta/go-webserver/v2
+module github.com/Arpeet-gupta/go-webserver/v3
 
 go 1.15
