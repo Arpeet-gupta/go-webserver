@@ -15,6 +15,10 @@ func main() {
 		res.Header().Set("Content-Type", "text/html")
 		fmt.Fprint(res, "<h1>Golang!</h1>")
 	})
+	http.HandleFunc("/search", func(res http.ResponseWriter, req *http.Request) {
+		res.Header().Set("Content-Type", "text/html")
+		fmt.Fprint(res, "<h1>Search-API</h1>")
+	})
 	// handle `/static` route
 	http.Handle("/static/", http.StripPrefix("/static", fs))
 
